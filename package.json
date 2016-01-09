@@ -1,0 +1,15 @@
+{
+  "name": "ts-xxxx-repro",
+  "description": "main project using chained ts libraries",
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "scripts": {
+    "postinstall": "typings install && tsc"
+  },
+  "dependencies": {
+    "typescript": "^1.7.3",
+    "typings": "^0.5.1",
+    "ts-lib2": "git+https://github.com/erykwarren/ts-lib2.git"
+  }
+}
